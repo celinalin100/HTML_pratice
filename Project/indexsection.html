@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html land="zh-Hant-TW">
+<head>
+    
+    
+    <title>地球軌道</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+        html,body {
+            height:100%;
+            overflow: hidden;
+        }
+
+        #universe{
+
+        background:radial-gradient(#555,#000);
+    }
+        
+@keyframes starFlash{
+    from {opacity: 1;} 
+    to { opacity:0;}
+                   }
+        
+        #stars {
+        height:100%;
+        background-image:url("stars.png");
+        background-size: cover;
+
+        animation:starFlash 3 s infinite alternate;
+        }
+ 
+ @keyframes sunShine{
+            from{box-shadow: 0 0 40px #f5c91a;
+
+            }
+            to{box-shadow: 0 0 500px #f5c91a;
+               }
+            }
+
+        #sun {
+            width:200px;
+            height:200px;
+            border-radius:150px;
+            /*background-color:orange;*/
+            background: radial-gradient(#f5c313,#ec7e08);
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-100px;
+            margin-left:-100px;
+            box-shadow: 0 0 45px #f5c91a;
+            animation: sunShine 6 s infinite alternate;
+            animation:spin 10s linear infinite; 
+        }
+@keyframes spin{
+    from{transform:rotate(0);}
+    to{transform: rotate(360deg);}
+
+
+        }
+
+        #earthOrbit{
+            height:500px;
+            width:500px;
+
+           /* border:1px solid red;*/
+           position: absolute;
+           top:50%;
+           left:50%;
+           margin-top:-250px;
+           margin-left: -250px;
+           border-radius: 300px;
+           animation:spin 30s linear infinite; 
+        }
+
+        #earth{
+            position:absolute;
+            top:300px;
+            margin-top:-50px;
+            margin-left:-50px;
+            animation:spin 10s linear infinite;    
+        }
+
+         #moonOrbit{
+            height:120px;
+            width:120px;
+           /* border:1px solid red;*/
+            position: absolute;
+           top:50%;
+           margin-top:-60px;
+           margin-left: -60px;
+           border-radius: 60px;
+            animation:spin 3s linear infinite; 
+
+       
+         }
+
+         #moon{
+            position:absolute;
+            top:50%;
+            margin-top:-50px;
+            width:30px;
+            height: 30px;
+            background:radial-gradient(#ddd,#888);
+            border-radius:100%;
+     animation:spin 3s linear infinite; 
+
+         }
+     </style>   
+   </head>
+
+   <body id="universe">
+    <div id="stars"></div>
+    <div id="sun"></div>
+    <div id="earthOrbit">
+<img id=earth src="earth.png" alt="earth" width="100px" height="100px">
+    <div id ="moon"></div>
+    <div id ="moonOrbit">
+    </div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html land="zh-Hant-TW">
+<head>
+    <title>My eBay</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="stylesheet"type="text/css"  href="style.css">
+
+
+
+</head>
+
+<body>
+<!--------------------------Header------------------>
+
+<header>
+<div class="container">
+
+<ul class="navbar">
+  
+    <li id="signin-style" class="navItem">Hi!<a href="#">Sign in</a>or<a href="#">register</a></li>  
+    <li class="navItem"><a href="#">Daily Deals</a></li>
+    <li class="navItem"><a href="#">Sell</a></li>
+    <li class="navItem no-border"><a href="#">Help & Contact</a></li>
+
+
+    <li id="cart"class="navItem float-right no-border"><img src="img/cart.png" alt="cart" title="您的購物車" width="25px"></li>
+    <li id="alert"class="navItem float-right no-border"><img src="img/alert.png" alt="alert" width="25px"></li>
+    <li class="navItem float-right no-border"><a href="#">My eBay</li>
+
+</ul>
+    </div>
+ </header>   
+
+ <!-------------------------Search Form------------------------------->
+
+ <div id="search-bar" class="clearfix setBGColor">
+<div class="container">
+<img id="brand"src="img/brand.png" alt="eBay" height="50px"
+>
+<button id="shopping-button" type="button">
+<p>Shop by category 
+</p>
+<img id="arrow" src="img/arrow.png" alt="arrow" width="20px">
+
+</button>
+
+<form id="search-form">
+<table>
+<tr>
+   
+   <td>
+    <input id="search-field" class="text-field" type="text" name="search-content" placeholder="Search for anything">
+   </td> 
+
+   <td>
+
+    <div id="category-textfield" class="text-field">
+        <select class="options" name="cate">
+            <option value="0" selected="selected">All Categories </option>
+                
+           <option value="1">Antiques</option>
+           <option value="2">Art</option>
+           <option value="3">Baby</option>
+           <option value="4">Books</option>
+           <option value="5">Business&Industrial</option>
+           <option value="6">Camara &Photo</option>
+           <option value="7">Cell Phone &Accessories</option>
+
+        </select>
+    </div>
+   </td> 
+
+   <td>
+
+    <input class="btn-primary" value="Search" type="submit">
+   </td> 
+
+   <td>
+    <a href="#"id="advanced-button" title="高級搜索">Advanced</a>
+   </td> 
+
+
+
+
+</tr>
+</table>
+</form>    
+</button>
+
+
+
+
+
+</div>
+  </div>  
+
+  <!-------------Navigation Bar----------------->
+
+  <nav class="clearfix setBGColor">
+    <div class="container">
+<ul id="navigation-bar" class="navbar tb-border" >
+
+<li class="navItem no-border li-space"><a href="#">Following</a></li>
+<li class="navItem no-border li-space active"><a href="#">Today</a></li>
+
+<div class="divider"></div>
+
+<li class="navItem no-border li-space"><a href="#">Electronics</a></li>
+<li class="navItem no-border li-space"><a href="#">Collectibles &Garden</a></li>
+<li class="navItem no-border li-space"><a href="#">Sporting Goods</a></li>
+<li class="navItem no-border li-space"><a href="#">Motors</a></li>
+<li class="navItem no-border li-space"><a href="#">Daily Deals</a></li>
+
+
+
+</ul>
+</div>
+</nav>
+
+<!-------------Advertisment----------------->
+
+<section id="adSection"class="setBGColor clearfix">
+<div class="container">
+
+<div id="column1">
+
+<div>
+    <img id="ad1" class="add-border" src="img/ad1.png" alt="ad1" width="876px">
+</div>
+</div>
+
+<div id="column2">
+    <div>
+<img id="ad2" class="add-border" src="img/ad2.png" alt="ad2" width="300px" height="100px">
+</div>
+
+<div id="column3">
+    <div>
+<img id="ad3" class="add-border" src="img/ad3.png" alt="ad3" width="300px" height="100px">
+</div>
+
+
+
+</div>
+</section>
+
+<!---------------------Product Section-------------------->
+
+<section id="productSection" class="clearfix setBGColor">
+   <div class="container">
+   
+   <h2 class=" hero-heading">Today's Featured Collections</h2>
+
+<div id="show-product">
+
+<!---------------Product1----------------->    
+
+<div class="product-section">
+<div class="product-photo">
+    <div class="photo-column1">
+       <img id="phto1" src="img/product1.png" alt="product1">
+    </div>
+<div class="photo-column2">
+    <div class="thumb">
+        <img class="thumbnail" src="img/thumbnail1.1.png" alt="thumbnail1_1">
+
+   </div> 
+
+    <div class="thumb">
+        <img class="thumbnail" src="img/thumbnail1.2.png" alt="thumbnail1_2">
+
+   </div> 
+
+    <div class="thumb">
+        <img id="thumbnail-fix" class="thumbnail" src="img/thumbnail1.3.png" alt="thumbnail1_3">
+
+   
+   </div>
+
+
+   </div>
+
+
+
+<!---------------------------Artical-------------->
+
+<article>
+    <div class="left-col" > 
+
+        <h3 class="title">In A Flash</h3> 
+
+        <div class="description-container">
+        <p class="product-details">Make new memories with instant cameras link a Fuji Instax Mini 25,a Leica Sofort, or a pokaroid instant-print camara-plus a lomo instant aumomat from lomography.
+        <a href="#" title="閱讀更多"><span class=" read-more "></span>
+        </a> 
+        </p>
+        </div>
+
+    </div>
+
+    <div class="right-col right-col-text" > 
+        <ul class="right-col-container">
+        <li class="right-col-item">15 items</li>
+        <li class="right-col-item">by ebayteacheditor</li>
+        <li class="right-col-item"><a href="#">Shop now</a></li>
+
+        </ul>
+
+    </div>
+
+
+</article>
+</div>
+
+
+    
+</div>
+
+<!------------------Product 1End-------------------------------->
+
+
+<!-------------------------Product 2----------------------------------->
+
+<div class="product-section">
+    <div class="product-photo">
+        <div class="photo-column1">
+           <img id="phto1" src="img/product1.png" alt="product1">
+        </div>
+    <div class="photo-column2">
+        <div class="thumb">
+            <img class="thumbnail" src="img/thumbnail1.1.png" alt="thumbnail1_1">
+
+       </div> 
+
+        <div class="thumb">
+            <img class="thumbnail" src="img/thumbnail1.2.png" alt="thumbnail1_2">
+
+       </div> 
+
+        <div class="thumb">
+            <img id="thumbnail-fix" class="thumbnail" src="img/thumbnail1.3.png" alt="thumbnail1_3">
+
+       </div>
+        
+    </div>
+
+
+   </div>
+
+
+
+<!---------------------------Artical---------------------------------------------->
+
+    <article>
+        <div class="left-col" > 
+
+            <h3 class="title">In A Flash</h3> 
+
+            <div class="description-container">
+                <p class="product-details">Make new memories with instant cameras link a Fuji Instax Mini 25,a Leica Sofort, or a pokaroid instant-print camara-plus a lomo instant aumomat from lomography.
+                <a href="#" title="閱讀更多"><span class=" read-more "></span>
+                </a> 
+                </p>
+            </div>
+        </div>
+        
+        <div class="right-col right-col-text" > 
+            <ul class="right-col-container">
+            <li class="right-col-item">15 items</li>
+            <li class="right-col-item">by ebayteacheditor</li>
+            <li class="right-col-item"><a href="#">Shop now</a></li>
+            </ul>
+        </div>
+
+
+    </article>
+    
+</div>
+
+<!----------------------- Product 2 End----------------------------------------->
+
+</div>
+
+</div>
+</section>
+<!--------------------Daily Deals--------------->
+
+<section id="daily-deal" class="clearfix setBGColor">
+
+    <div class="container">
+   <h2 class="hero-heading">Daily Deals</h2>
+   
+   <div class="box">
+
+<div class="box-subcontent">
+
+<img class="sale" src="img/1.png"alt="sale-pic">
+<a href="#" class="details">What a wonderful world! </a>
+
+<h4>TWD40000</h4>
+
+
+</div>
+
+<div class="box-subcontent">
+
+<img class="sale" src="img/1.png"alt="sale-pic">
+<a href="#" class="details">What a wonderful wolrd! </a>
+
+<h4>TWD40000</h4>
+
+
+</div>
+
+<div class="box-subcontent">
+
+<img class="sale" src="img/1.png"alt="sale-pic">
+<a href="#" class="details">What a wonderful wolrd! </a>
+
+<h4>TWD40000</h4>
+
+
+</div>
+
+<div class="box-subcontent">
+
+<img class="sale" src="img/1.png"alt="sale-pic">
+<a href="#" class="details">What a wonderful wolrd! </a>
+
+<h4>TWD40000</h4>
+
+
+</div>
+    
+
+<!------------------pagination----------------->
+
+<div class="pagination clearfix"> 
+
+    <div class="pagination-content">
+<a href="#"><</a>
+<a href="#">1</a>
+<a href="#">2</a>
+<a href="#"class="active">3</a>
+<a href="#">4</a>
+<a href="#">5</a>
+    
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+<!----------------------------Collection--------------->
+<div id="collections">
+
+    <p> Get inspired! Explore all of our<a href="#">Tranding Collections</a></p>
+
+    </div>
+</section>
+
+
+<!------------------footer----------------------->
+<footer>
+    <div class="container">
+
+<div style="float:right">
+
+<p>&copy:2019版權celina.com</p>
+</div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+</body>
+</html>
